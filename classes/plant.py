@@ -17,7 +17,7 @@ class Plant:
     
     def check_growth(self):
         growth_stage = "Sprout"
-        sunlight_water_over_five = self.sunlight_hours + self.water_level > 12
+        sunlight_water_over_five = self.sunlight_hours + self.water_level >= 12
 
         if self.is_blooming or sunlight_water_over_five:
             growth_stage = "Mature"
